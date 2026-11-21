@@ -1,0 +1,54 @@
+{
+  "name": "dsh-reply-card",
+  "version": "0.4.1",
+  "description": "Export a DSH reply as a shareable long image",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "scripts"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "share",
+    "image",
+    "export"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aquarius2323/dsh-reply-card.git"
+  },
+  "scripts": {
+    "test": "node scripts/render-test.mjs && node scripts/clean-test.mjs && node scripts/reasoning-test.mjs"
+  },
+  "homepage": "https://github.com/Aquarius2323/dsh-reply-card#readme",
+  "bugs": {
+    "url": "https://github.com/Aquarius2323/dsh-reply-card/issues"
+  }
+}
