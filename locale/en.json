@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "title": "Share as image",
+    "description": "Click \"Share image\" in the session header to export the last reply (with your question) as one vertical image; switch to the full conversation if needed. Only visible message text is included — reasoning is never exported. Long conversations are paginated automatically. Rendered locally; download is the way to save the PNG.",
+    "detail": "docs/DETAIL.md"
+  },
+  "action": {
+    "share": "Share image",
+    "busy": "Rendering…",
+    "copy": "Copy",
+    "download": "Download",
+    "close": "Close",
+    "copied": "Copied to clipboard"
+  }
+}
